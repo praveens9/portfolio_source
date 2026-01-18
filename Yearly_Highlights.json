@@ -1,0 +1,126 @@
+{
+  "2025": {
+    "summary": "FPS Active-Active Strategy & Micro-Fulfilment Automation",
+    "details": [
+      "Designed the C4 architecture and detailed specifications for the 'Decant' system integration.",
+      "Analyzed requirements for migrating the Fulfilment Platform System (FPS) to an Active-Active architecture.",
+      "Defined integration contracts between legacy FPS systems and new automation hardware.",
+      "Authored 21 technical design documents and decision records (ADRs)."
+    ]
+  },
+  "2024": {
+    "summary": "Micro-Fulfilment Centre (MFC) Engineering",
+    "details": [
+      "Served as an initial engineer for the MFC initiative, defining technical requirements for vendor onboarding.",
+      "Conducted 'Build vs. Buy' analysis for the Warehouse Management System (WMS).",
+      "Designed WMS/WCS integration patterns to meet system latency requirements.",
+      "Authored 11 technical design documents and decision records (ADRs)."
+    ]
+  },
+  "2023": {
+    "summary": "Operational Efficiency & Task Orchestration",
+    "details": [
+      "Implemented 'Tray Identifier' logic to improve physical inventory tracking.",
+      "Redesigned the task buffer management system to deterministic logic, improving task availability.",
+      "Optimized middleware orchestration to reduce API latency for in-store operations.",
+      "Authored 6 technical design documents and decision records (ADRs)."
+    ]
+  },
+  "2022": {
+    "summary": "Automated Marshalling Integration (Vanderlande)",
+    "details": [
+      "Built the 'fps-cfc-adaptor' to integrate internal fulfilment workflows with automated marshalling hardware.",
+      "Implemented state machine logic to handle out-of-order events from vendor systems.",
+      "Updated the DLQ Processor with replay capabilities to handle integration failures.",
+      "Authored 9 technical design documents and decision records (ADRs)."
+    ]
+  },
+  "2021": {
+    "summary": "Platform Services: PickAdmin & Move Service",
+    "details": [
+      "Built 'PickAdmin' using the Kubernetes Java SDK to manage dynamic CronJobs.",
+      "Developed the 'Task and Timer' service to handle time-sensitive business signals.",
+      "Delivered the 'Pre-Pick' feature to support increased load during peak periods."
+    ]
+  },
+  "2020": {
+    "summary": "Algorithm Integration & Async Processing",
+    "details": [
+      "Integrated the 'Crystal' algorithm (G3) for tray/trolley generation, enabling asynchronous task processing.",
+      "Implemented buffering for long-running jobs to maintain system responsiveness.",
+      "Led the technical migration from legacy trolley algorithms to multi-variable generation logic."
+    ]
+  },
+  "2019": {
+    "summary": "Fulfilment Platform System (FPS) & Logistic Unit Service",
+    "details": [
+      "Designed the 'Logistic Unit Service' as a core microservice for the new FPS platform.",
+      "Implemented 'PureGroup' logic to support inventory management in a distributed system.",
+      "Applied domain-driven design (DDD) to support scalable fulfilment operations."
+    ]
+  },
+  "2018": {
+    "summary": "Distributed Systems Migration",
+    "details": [
+      "Developed 'Delivery Service' and 'PickTrip Service' to support new handheld devices.",
+      "Built the 'WMS Collaborator' to integrate automated stock retrieval systems.",
+      "Contributed to the migration from legacy .NET monoliths to distributed Java microservices."
+    ]
+  },
+  "2017": {
+    "summary": "Monolith Componentization",
+    "details": [
+      "Decoupled the 'Picking Component' from the legacy DMS monolith to allow independent scaling.",
+      "Implemented a 'Rules Engine' for trip generation and pre-creation logic to manage load spikes.",
+      "Delivered Start-of-Day (SOD) optimization logic for daily route generation."
+    ]
+  },
+  "2016": {
+    "summary": "Algorithms: Topaz (G2) & Dynamic Routing",
+    "details": [
+      "Integrated the 'Topaz' Simulated Annealing algorithm for route planning.",
+      "Developed re-routing logic to handle real-time aisle obstructions.",
+      "Implemented gamification features to improve user engagement."
+    ]
+  },
+  "2015": {
+    "summary": "Performance Engineering & Generation",
+    "details": [
+      "Implemented 'On-Demand Picktrip Generation' evaluating multiple constraints (Weight, Volume).",
+      "Designed the 'PickTrip Buffer Management' system to throttle workflow load.",
+      "Optimized the generation engine to support scaling order volumes."
+    ]
+  },
+  "2014": {
+    "summary": "Algorithm Development: Path Optimization (G1)",
+    "details": [
+      "Implemented 1-D Path Improvement logic using fixture sequencing.",
+      "Developed 'Aisle Flipping' algorithms to reduce picker travel time.",
+      "Established initial data-driven optimization patterns for the legacy system."
+    ]
+  },
+  "2013": {
+    "summary": "Joined Tesco Technology",
+    "details": [
+      "Transitioned from Infosys to Tesco as a Senior Software Engineer, focusing on legacy .NET modernization."
+    ]
+  },
+  "2011": {
+    "summary": "Infosys: Retail Domain Expertise",
+    "details": [
+      "Promoted to Senior Software Engineer. Delivered critical signage solutions for Target retail stores."
+    ]
+  },
+  "2009": {
+    "summary": "Infosys: Energy & Procurement",
+    "details": [
+      "Promoted to Software Engineer. Delivered web-based procurement systems for Rite.Net."
+    ]
+  },
+  "2008": {
+    "summary": "Infosys: Career Start",
+    "details": [
+      "Joined Infosys as a Trainee. Worked on HR domain applications for Hudson."
+    ]
+  }
+}

@@ -1,0 +1,939 @@
+/* =========================================================
+   PORTFOLIO MASTER STYLES — FINAL (FIXED DOTS + SPACED TEXT)
+   ========================================================= */
+
+/* ---------- ROOT VARIABLES ---------- */
+:root {
+  --bg-color: #0f172a;
+  --text-color: #eaeaea;
+  --accent-color: #00b7ff;
+  --font-main: 'Inter', sans-serif;
+  --font-weight-light: 400;
+  --font-weight-bold: 700;
+  --section-padding: 60px;
+  --card-padding: 24px;
+  --shadow-hover: 0 4px 16px rgba(0, 183, 255, 0.25);
+}
+
+/* ---------- GLOBAL STYLES ---------- */
+body {
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background: var(--bg-color);
+  margin: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover { color: #19ccff; }
+
+.container {
+  width: 90%;
+  max-width: 1200px; /* Widen container */
+  margin: 0 auto;
+}
+
+/* Section Layout */
+.section {
+  padding: 20px 20px; /* Compact sections */
+}
+
+/* Minimalist Label-Style Heading */
+.section h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--accent-color);
+  opacity: 0.8;
+  margin-bottom: 20px; /* Reduced heading gap */
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container p {
+  max-width: 800px;
+  /* ...other styles inherited or overridden in #about... */
+}
+
+/* ---------- HEADER ---------- */
+header {
+  padding: 20px 20px 10px; /* Tighter header */
+  text-align: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, transparent 100%);
+}
+header h1 {
+  font-size: 2.2em; /* Slightly smaller */
+  margin-bottom: 5px;
+}
+/* Role Tagline */
+.header-role {
+  text-align: center;
+  color: var(--accent-color);
+  opacity: 0.9;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  font-size: 0.9rem; /* Compact role */
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0; /* Reduced nav margin */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+header nav a {
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+
+/* About Typography Overrides */
+#about .container p {
+  max-width: 1000px; /* Widen text block */
+  margin: 0 auto 12px; 
+  font-size: 1rem;     
+  line-height: 1.6;
+  color: #d1d5db; 
+}
+
+/* ---------- SKILLS COMPACT ---------- */
+.skills-compact {
+  margin-top: 15px; 
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left; 
+  max-width: 1000px; /* Widen skills block */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.skills-compact p {
+  margin: 4px 0; /* Very tight list items */
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+
+.skill-label {
+  color: var(--accent-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  margin-right: 8px;
+}
+
+/* ---------- PROJECTS ---------- */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: var(--card-padding);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* =========================================================
+   CUSTOM TIMELINE — FIXED DOTS, CENTERED LINE, SPACED TEXT
+   ========================================================= */
+#timeline {
+  position: relative;
+  margin: 40px auto;
+  width: 95%; /* Increased from 80% to use more screen real estate */
+  max-width: 1200px; /* Increased max-width */
+}
+
+/* Vertical Line */
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: var(--accent-color);
+  transform: translateX(-50%);
+  opacity: 0.3;
+  z-index: 1;
+}
+
+/* Year Marker */
+.timeline-year {
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fbbf24; /* Amber color for contrast */
+  margin: 12px 0 6px;
+  background: var(--bg-color);
+  padding: 2px 10px;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  z-index: 3;
+}
+
+/* Legacy Year Style */
+.timeline-year.legacy-year {
+  color: #94a3b8; /* Muted slate/gray */
+  font-size: 1.15rem; /* Match size */
+  font-weight: 700;
+  margin-top: 30px; /* Extra separation */
+}
+
+/* Repo Entries (alternating left/right) */
+.timeline-item {
+  position: relative;
+  z-index: 2;
+  width: 48%;
+  padding: 2px 12px;
+  box-sizing: border-box;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+.timeline-item.right {
+  left: 52%;
+  text-align: left;
+}
+
+/* THE DOT — absolutely centered on the timeline spine */
+.timeline-item .timeline-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0.5em;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* Position dots relative to the spine (gap is 2% of container, item is 48%) */
+/* 2% / 48% = 4.16% */
+.timeline-item.left .timeline-dot {
+  right: -4.16%;
+  transform: translateX(50%);
+}
+
+.timeline-item.right .timeline-dot {
+  left: -4.16%;
+  transform: translateX(-50%);
+}
+
+/* Ensure text is close to the spine */
+.timeline-item.left .repo-name  { margin-right: 15px; }
+.timeline-item.right .repo-name { margin-left: 15px; }
+
+/* Repo Name */
+.repo-name {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+  display: inline-block;
+  line-height: 1.2;
+  margin: 0;
+  transition: all 0.2s ease;
+}
+.repo-name:hover { color: var(--accent-color); }
+
+/* Summary Snippet */
+.repo-snippet {
+  margin: 4px 0 0;
+  font-size: 0.75rem;
+  color: #888;
+  line-height: 1.4;
+  max-width: 320px; /* Keep it compact */
+  display: inline-block;
+}
+.timeline-item.left .repo-snippet { margin-left: auto; }
+
+/* Visual Connectors */
+.connector-line {
+  position: absolute;
+  top: 0.85em;
+  height: 1px;
+  background: rgba(0, 183, 255, 0.15);
+  width: 40px; /* Fixed length connecting dot to text */
+  z-index: 1;
+}
+.timeline-item.left .connector-line {
+  right: -11.11%;
+  transform: translateX(-50%);
+  width: 15px; /* Shorter for left side to meet the text */
+}
+.timeline-item.right .connector-line {
+  left: -11.11%;
+  transform: translateX(50%);
+  width: 15px;
+}
+
+/* Adjust dot to be on top of lines */
+.timeline-dot {
+  z-index: 10 !important;
+}
+
+/* YEAR SUMMARY (Interactive) */
+.year-summary-item .repo-name {
+  color: #fbbf24; /* Amber */
+  font-size: 1.1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.year-summary-item .repo-snippet {
+  color: #ddd;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: 4px;
+}
+.year-summary-item .timeline-dot {
+  background-color: #fbbf24;
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.2);
+  width: 12px;
+  height: 12px;
+}
+.year-summary-item .connector-line {
+  background: rgba(251, 191, 36, 0.2);
+}
+
+/* Tech Badges (Chips) */
+.tech-stack {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: flex-start;
+}
+.timeline-item.left .tech-stack {
+  justify-content: flex-end; /* Right-align chips for left items */
+}
+
+.tech-badge {
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Category Specific Colors */
+.tech-badge.languages { border-color: #fca5a5; color: #fca5a5; } /* Red-ish */
+.tech-badge.frameworks---libs { border-color: #93c5fd; color: #93c5fd; } /* Blue-ish */
+.tech-badge.infrastructure { border-color: #fde047; color: #fde047; } /* Yellow-ish */
+.tech-badge.data---messaging { border-color: #86efac; color: #86efac; } /* Green-ish */
+.tech-badge.architecture { border-color: #d8b4fe; color: #d8b4fe; } /* Purple-ish */
+
+/* Popup List Styles */
+.timeline-card .summary-list {
+  padding-left: 20px;
+  margin: 10px 0;
+  list-style-type: none; /* Custom bullets */
+}
+.timeline-card .summary-list li {
+  margin-bottom: 8px;
+  position: relative;
+  font-style: italic; /* Reflective tone */
+  color: #eee;
+}
+.timeline-card .summary-list li::before {
+  content: "•";
+  color: var(--accent-color);
+  font-weight: bold;
+  position: absolute;
+  left: -15px;
+}
+
+/* DOCUMENTATION ENTRY (Purple) */
+.doc-entry .repo-name {
+  color: #c084fc; /* Soft Purple */
+}
+/* Ensure link behaves like the header */
+a.doc-link {
+  text-decoration: none;
+  border-bottom: 1px dashed transparent; /* Subtle hint it's a link on hover */
+}
+a.doc-link:hover {
+  border-bottom-color: #c084fc;
+}
+
+.doc-entry .timeline-dot {
+  background-color: #c084fc;
+  box-shadow: 0 0 0 3px rgba(192, 132, 252, 0.2);
+}
+.doc-entry .connector-line {
+  background: rgba(192, 132, 252, 0.2);
+}
+
+/* MAJOR PROJECT PROMINENCE (Subtle) */
+.major-project .repo-name {
+  color: var(--accent-color); /* Use the primary brand color */
+  font-weight: 700;
+  font-size: 0.95rem; /* Only slightly larger */
+}
+
+.major-project .timeline-dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(0, 183, 255, 0.2); /* A thin, elegant halo */
+  z-index: 10;
+}
+
+/* =========================================================
+   TIMELINE OVERLAY CARD
+   ========================================================= */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 150;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+#overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+.timeline-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.96);
+  background: rgba(20, 26, 40, 0.98);
+  color: var(--text-color);
+  width: 70%;
+  max-width: 500px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 183, 255, 0.35);
+  z-index: 10000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  overflow-y: auto;
+  max-height: 70vh;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.timeline-card.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+.timeline-card:hover {
+  transform: translate(-50%, -50%) scale(1.02);
+  box-shadow: var(--shadow-hover);
+}
+.timeline-card h3,
+.timeline-card h4 {
+  color: var(--accent-color);
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+.timeline-card ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+.pr-link {
+  font-size: 0.8rem;
+  color: var(--accent-color);
+  opacity: 0.9;
+}
+.close-card {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+  color: #000;
+  font-weight: 600;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.close-card:hover {
+  background: #19ccff;
+}
+
+/* Modal Tech Stack */
+.timeline-card .tech-stack-modal {
+  margin: 10px 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.timeline-card .tech-badge {
+  font-size: 0.75rem;
+  padding: 3px 8px;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+@media (max-width: 768px) {
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    width: 100%;
+    left: 0;
+    text-align: left;
+  }
+
+  .timeline-line {
+    left: 25px;
+    transform: none;
+  }
+  .timeline-item .timeline-dot {
+    left: 25px;
+    transform: none;
+  }
+  .repo-name {
+    margin-left: 50px;
+    display: block;
+  }
+  .repo-snippet {
+    margin-left: 50px; /* Align snippet with title on mobile */
+  }
+  .tech-stack {
+    margin-left: 50px; /* Align tech stack with title on mobile */
+    justify-content: flex-start;
+  }
+  .timeline-year {
+    background: var(--bg-color);
+    margin: 18px 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+  header h2 {
+    font-size: 1.1em;
+  }
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* LAB SECTION (Collapsible) */
+details.lab-details summary {
+  list-style: none; /* Hide default arrow */
+  cursor: pointer;
+  outline: none;
+}
+details.lab-details summary::-webkit-details-marker {
+  display: none;
+}
+
+#lab h2 {
+  color: #10b981; /* Emerald Green */
+  opacity: 0.9;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggle-icon {
+  font-size: 0.7em;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+details[open] .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.lab-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid rgba(16, 185, 129, 0.2);
+  margin-top: 20px; /* Space after opening */
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.lab-item {
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.1);
+  align-items: center; /* Center vertically */
+  gap: 15px;
+}
+
+/* Column 1: Project Name (Link) */
+.lab-name {
+  font-family: 'Courier New', Courier, monospace;
+  color: #10b981;
+  font-weight: 600;
+  font-size: 0.95rem;
+  width: 160px; /* Fixed width */
+  flex-shrink: 0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.lab-name:hover {
+  color: #34d399;
+  text-decoration: underline;
+}
+
+/* Column 2: Description (Flexible) */
+.lab-desc {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  flex-grow: 1; /* Takes remaining space */
+}
+
+/* Column 3: Source Link */
+.lab-source {
+  font-size: 0.75rem;
+  color: #555;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #333;
+  padding: 2px 8px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.lab-source:hover {
+  border-color: #10b981;
+  color: #10b981;
+}
+
+@media (max-width: 600px) {
+  .lab-item {
+    flex-wrap: wrap;
+  }
+  .lab-name {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  .lab-source {
+    margin-left: auto; /* Push to right on mobile too */
+  }
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.8em;
+  color: var(--text-color);
+}
+
+/* =========================================================
+   ANIMATIONS & EFFECTS
+   ========================================================= */
+.timeline-item.visible {
+  animation: fadeUp 0.6s ease forwards;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ROLE BADGE */
+.role-badge {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8; /* Muted Slate */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+  margin-bottom: 6px;
+}
+.timeline-item.right .role-badge {
+  margin-left: 15px; /* Match repo-name margin */
+}
+.timeline-item.left .role-badge {
+  margin-right: 15px; /* Match repo-name margin */
+}
+
+/* CAREER MILESTONE (ALTERNATING SIDE) */
+.milestone-item {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  pointer-events: none; /* purely visual */
+}
+
+/* Hollow Dot */
+.milestone-dot {
+  background-color: var(--bg-color) !important;
+  border: 2px solid #94a3b8;
+  width: 10px;
+  height: 10px;
+  box-shadow: none !important;
+  top: 0.6em !important;
+}
+
+/* Longer Connector Line */
+.milestone-connector {
+  width: 250px !important;
+  background: #94a3b8 !important;
+  opacity: 0.4;
+  top: 50% !important; /* Center vertically relative to the item */
+  transform: translateY(-50%) !important; /* Perfect vertical centering */
+  position: absolute;
+}
+
+/* Anchor Line to Spine */
+.timeline-item.left .milestone-connector {
+  right: -4.5%; /* Touch the spine dot (gap is ~4%) */
+  left: auto;
+  transform-origin: right center;
+}
+.timeline-item.right .milestone-connector {
+  left: -4.5%; /* Touch the spine dot */
+  right: auto;
+  transform-origin: left center;
+}
+
+/* Adjust Text Position to sit at the end of the line */
+.timeline-item.left .milestone-text-wrapper {
+  margin-right: 260px; /* Push text back by line width + gap */
+  text-align: right;
+  white-space: nowrap;
+  display: block; 
+}
+.timeline-item.right .milestone-text-wrapper {
+  margin-left: 260px; /* Push text forward by line width + gap */
+  text-align: left;
+  white-space: nowrap;
+  display: block;
+}
+
+/* Text Style */
+.milestone-text-side {
+  font-style: italic;
+  font-size: 0.95rem; 
+  color: #94a3b8;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 4px 0; /* Add vertical breathing room */
+}
+
+/* Horizontal Line crossing the milestone */
+.timeline-milestone::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: rgba(148, 163, 184, 0.15);
+  z-index: 1;
+}
+
+/* =========================================================
+   HIERARCHY FLIP: LEARNINGS = HERO, PROJECTS = SUPPORT
+   ========================================================= */
+
+/* 1. STANDARD PROJECT ITEM (The Supporting Evidence) */
+.timeline-item .content-box {
+  background: transparent; /* Remove card look */
+  padding: 0 10px;         /* Reduce padding */
+  border-left: 2px solid rgba(148, 163, 184, 0.2); /* Subtle divider instead of box */
+  transition: opacity 0.3s ease;
+}
+
+/* Right side items get right border instead */
+.timeline-item.right .content-box {
+  border-left: none;
+  border-right: 2px solid rgba(148, 163, 184, 0.2);
+}
+
+.timeline-item .repo-name {
+  font-size: 0.85rem;
+  color: #94a3b8; /* Muted Slate */
+  font-weight: 600;
+}
+
+.timeline-item .repo-snippet {
+  color: #64748b; /* Very muted */
+  font-size: 0.75rem;
+}
+
+.timeline-item .project-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #64748b; /* Muted dot */
+  box-shadow: none;
+}
+
+/* Hover Effect: Bring project into focus */
+.timeline-item:not(.learning-card-item):hover .content-box {
+  opacity: 1;
+  border-color: var(--accent-color);
+}
+.timeline-item:not(.learning-card-item):hover .repo-name {
+  color: var(--text-color);
+}
+
+
+/* 2. LEARNING CARD ITEM (Subtle Professional) */
+.learning-card-item {
+  pointer-events: none;
+  margin-bottom: 20px;
+  padding: 0 !important;
+  width: 50% !important; /* Anchor exactly to the 50% spine */
+  box-sizing: border-box;
+}
+
+.learning-card-item .content-box {
+  background: transparent;
+  border: none;
+  padding: 0; 
+  box-shadow: none;
+}
+
+.learning-list-inline li {
+  font-size: 0.95rem;
+  color: #f1f5f9;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 6px;
+  line-height: 1.4;
+  position: relative;
+  display: block;
+}
+
+/* Right Side: Anchor at 50% spine */
+.timeline-item.right.learning-card-item {
+  left: 50% !important;
+  padding-left: 30px !important; /* Heavily reduced to pull bullet closer */
+}
+.timeline-item.right .learning-list-inline li {
+  padding-left: 25px; 
+  text-align: left;
+}
+.timeline-item.right .learning-list-inline li::before {
+  content: "•";
+  color: var(--accent-color);
+  font-weight: 800;
+  position: absolute;
+  left: 0;
+  width: 20px; 
+  text-align: center;
+  top: 0;
+}
+
+/* Left Side: Anchor at 50% spine */
+.timeline-item.left.learning-card-item {
+  left: 0 !important;
+  padding-right: 65px !important; 
+}
+.timeline-item.left.learning-card-item .timeline-dot {
+  right: 0 !important; 
+  left: auto;
+  transform: translateX(50%); 
+}
+.timeline-item.left .learning-list-inline li {
+  padding-right: 25px; 
+  text-align: right;
+}
+.timeline-item.left .learning-list-inline li::after {
+  content: "•";
+  color: var(--accent-color);
+  font-weight: 800;
+  position: absolute;
+  right: 0;
+  width: 20px; 
+  text-align: center;
+  top: 0;
+}
+
+/* Right Side: Dot Correction */
+.timeline-item.right.learning-card-item .timeline-dot {
+  left: 0 !important; /* Snap to spine edge */
+  right: auto;
+  transform: translateX(-50%); /* Center on line */
+}
+.timeline-item.left .learning-list-inline li::before {
+  content: none;
+}
+
+/* Projects as subordinate but legible evidence */
+.timeline-item:not(.learning-card-item) .repo-name {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  color: #94a3b8;
+  font-weight: 500;
+}
+.timeline-item:not(.learning-card-item) .repo-snippet {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+/* Hero Dot */
+.learning-dot {
+  background-color: #10b981 !important;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.6) !important;
+  width: 12px !important;
+  height: 12px !important;
+  border: 2px solid #fff;
+  z-index: 20 !important;
+}
+
+/* Ensure container allows overflow for these sidebars */
+#timeline {
+  position: relative;
+  margin: 40px auto;
+  width: 95%; 
+  max-width: 1200px; 
+}

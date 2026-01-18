@@ -1,0 +1,436 @@
+[
+  {
+    "project": "Fulfilment Order Processor",
+    "period": {
+      "start": "2018-07-09T11:07:07Z",
+      "end": "2021-10-08T07:09:01Z"
+    },
+    "summary": [
+      "Engineered data reconciliation logic to resolve critical protocol divergences between Order Management (COS) and Fulfilment (FPS) systems, ensuring 100% data integrity.",
+      "Architected high-performance integration endpoints for MoveService, enabling granular resource tracking at the order-line level.",
+      "Optimized database query performance via strategic indexing, eliminating latency bottlenecks during high-volume order drops."
+    ],
+    "technologies": {
+      "Architecture": [
+        "REST API"
+      ]
+    },
+    "role": "Software Development Engineer I"
+  },
+  {
+    "project": "PickAdmin Service",
+    "period": {
+      "start": "2021-10-06T11:05:31Z",
+      "end": "2021-11-11T11:46:22Z"
+    },
+    "summary": [
+      "Designed a configuration-driven CronJob framework using the Kubernetes Java SDK, automating complex store workflows (EPBZ) and removing manual operational overhead.",
+      "Implemented reliable asynchronous event triggers for DayReset processes, ensuring consistent state transitions across the platform.",
+      "Built dynamic management endpoints, empowering support teams to control job schedules without code deployments."
+    ],
+    "technologies": {
+      "Languages": [
+        "Java"
+      ],
+      "Infrastructure": [
+        "Kubernetes"
+      ],
+      "Data & Messaging": [
+        "Kafka"
+      ]
+    },
+    "role": "Software Development Engineer I"
+  },
+  {
+    "project": "Core Engineering & Scalability 2021",
+    "period": {
+      "start": "2018-07-09T11:15:39Z",
+      "end": "2021-11-16T11:37:38Z"
+    },
+    "summary": [
+      "<strong>Picking App</strong>: Modernized the in-store Picking Application to support pre-picking workflows, decoupling device logic from backend complexity.",
+      "<strong>Picking App</strong>: Engineered fault-tolerant integration paths to ensure new pre-pick features did not destabilize critical standard picking operations.",
+      "<strong>Document Printing Service</strong>: Redesigned health-check mechanisms to eliminate cascading cluster failures, significantly improving service resilience.",
+      "<strong>Loading Service</strong>: Led the security hardening initiative by migrating hardcoded credentials to Kubernetes Secrets across the loading domain.",
+      "<strong>Loading Service</strong>: Optimized retry policies and removed legacy backoff technical debt, increasing message processing throughput."
+    ],
+    "technologies": {
+      "Data & Messaging": [
+        "Couchbase",
+        "Kafka"
+      ],
+      "Architecture": [
+        "Resilience"
+      ],
+      "Infrastructure": [
+        "Kubernetes"
+      ]
+    },
+    "role": "Software Development Engineer I"
+  },
+  {
+    "project": "DLQ Processor",
+    "period": {
+      "start": "2021-05-25T07:01:47Z",
+      "end": "2022-10-29T04:46:17Z"
+    },
+    "summary": [
+      "Transformed the Dead Letter Queue (DLQ) Processor into a mission-critical Disaster Recovery component.",
+      "Architected a targeted replay mechanism allowing precise recovery of events by type, preventing data loss during downstream outages.",
+      "Enhanced observability by implementing distributed tracing and summary APIs, reducing Mean Time to Resolution (MTTR) for production incidents."
+    ],
+    "technologies": {
+      "Infrastructure": [
+        "Kubernetes"
+      ],
+      "Data & Messaging": [
+        "Kafka"
+      ],
+      "Architecture": [
+        "REST API"
+      ]
+    },
+    "role": "Software Development Engineer II"
+  },
+  {
+    "project": "FPS-CFC Adapter",
+    "period": {
+      "start": "2022-03-17T06:54:03Z",
+      "end": "2022-05-31T16:34:19Z"
+    },
+    "summary": [
+      "Designed the bridge service synchronizing internal FPS microservices with external Central Fulfilment Centre (CFC) automation.",
+      "Implemented a robust state machine to handle out-of-order robotic events, ensuring eventual consistency in a distributed environment.",
+      "Built comprehensive audit APIs to monitor synchronization health, facilitating rapid debugging of integration edge cases."
+    ],
+    "technologies": {
+      "Languages": [
+        "Java"
+      ],
+      "Infrastructure": [
+        "Kubernetes"
+      ],
+      "Data & Messaging": [
+        "N1QL"
+      ],
+      "Architecture": [
+        "REST API",
+        "CI/CD"
+      ]
+    },
+    "role": "Software Development Engineer II"
+  },
+  {
+    "project": "Core Engineering & Scalability 2022",
+    "period": {
+      "start": "2021-04-21T08:05:19Z",
+      "end": "2022-12-31T12:00:00Z"
+    },
+    "summary": [
+      "<strong>FPS Store Config</strong>: Automated store onboarding pipelines with CSV-based validation, replacing error-prone manual configuration tasks.",
+      "<strong>Label Printing</strong>: Architected a dynamic JPOS template engine for Zebra printers, enabling rapid rollout of new label formats without code changes.",
+      "<strong>Label Printing</strong>: Implemented conditional freezer-zone logic to ensure compliance with cold-chain storage requirements.",
+      "<strong>FPS Adapter</strong>: Established 'Golden Path' CI/CD pipelines and SonarQube quality gates, setting the engineering standard for new adapter services."
+    ],
+    "technologies": {
+      "Data & Messaging": [
+        "Kafka"
+      ],
+      "Architecture": [
+        "CI/CD"
+      ]
+    },
+    "role": "Software Development Engineer II"
+  },
+  {
+    "project": "Logistic Unit Service",
+    "period": {
+      "start": "2019-02-18T09:05:23Z",
+      "end": "2019-07-22T08:14:48Z"
+    },
+    "summary": [
+      "Founding Engineer for the Logistic Unit Service; designed the core Domain-Driven Design (DDD) model for managing tray and trolley lifecycles.",
+      "Implemented complex 'PureGroup' enrichment logic to support optimized inventory tracking across the distributed estate.",
+      "Engineered the service for massive horizontal scalability to handle the high-volume event stream of the entire retail network."
+    ],
+    "technologies": {},
+    "role": "Software Development Engineer I"
+  },
+  {
+    "project": "Move Service",
+    "period": {
+      "start": "2021-01-28T05:55:48Z",
+      "end": "2023-02-15T09:01:30Z"
+    },
+    "summary": [
+      "Orchestrated the evolution of MoveService into a resilient engine for managing critical resource allocation tasks.",
+      "Migrated persistence layers from destructive deletes to immutable updates, establishing a reliable audit trail for resource movements.",
+      "Hardened system stability by implementing circuit breakers and exponential backoff strategies for all external integrations."
+    ],
+    "technologies": {
+      "Frameworks & Libs": [
+        "Spring"
+      ],
+      "Infrastructure": [
+        "Kubernetes",
+        "Helm"
+      ],
+      "Data & Messaging": [
+        "Kafka",
+        "Couchbase",
+        "N1QL"
+      ],
+      "Architecture": [
+        "Resilience"
+      ]
+    },
+    "role": "Software Development Engineer II"
+  },
+  {
+    "project": "Picking Service",
+    "period": {
+      "start": "2021-06-08T06:07:42Z",
+      "end": "2023-10-28T16:28:35Z"
+    },
+    "summary": [
+      "Delivered the 'Tray Identifier' capability, a strategic feature solving the problem of lost physical inventory in stores.",
+      "Optimized the middleware orchestration layer, reducing picking trip generation latency and improving the colleague experience.",
+      "Implemented comprehensive audit logging for picked variances, enabling data-driven operational improvements."
+    ],
+    "technologies": {
+      "Languages": [
+        "Java"
+      ],
+      "Infrastructure": [
+        "Kubernetes"
+      ],
+      "Data & Messaging": [
+        "Kafka"
+      ]
+    },
+    "role": "Software Development Engineer II"
+  },
+  {
+    "project": "MFC Decant Planner",
+    "period": {
+      "start": "2025-06-30T06:12:25Z",
+      "end": "2025-06-30T06:12:25Z"
+    },
+    "summary": [
+      "Bootstrapped the Decant Planner microservice from scratch, defining the architectural patterns for the new domain.",
+      "Established the production-ready scaffolding including Helm charts, Docker strategies, and CI/CD pipelines to accelerate team onboarding.",
+      "Defined robust API contracts for decant scheduling, ensuring seamless alignment with Warehouse Management System (WMS) requirements."
+    ],
+    "technologies": {
+      "Infrastructure": [
+        "Azure",
+        "Helm"
+      ]
+    },
+    "role": "Software Development Engineer II"
+  },
+  {
+    "project": "FPS Picking App",
+    "period": {
+      "start": "2021-03-17T13:41:51Z",
+      "end": "2025-02-20T05:26:57Z"
+    },
+    "summary": [
+      "Modernized the critical in-store Picking Application to consume event-driven backend microservices, breaking dependencies on legacy monoliths.",
+      "Engineered a resilient mock-driven development environment, significantly accelerating feature delivery cycles.",
+      "Orchestrated seamless zero-downtime migrations during major backend platform shifts, ensuring uninterrupted operations for thousands of store colleagues."
+    ],
+    "technologies": {},
+    "role": "Software Development Engineer II"
+  },
+  {
+    "project": "Core Engineering & Scalability 2025",
+    "period": {
+      "start": "2025-01-21T06:32:20Z",
+      "end": "2025-12-31T12:00:00Z"
+    },
+    "summary": [
+      "<strong>Operations Data Service</strong>: Architected ODS extensions to ingest and normalize high-volume event streams (`luStats`, `pickTrip`) from new Micro-Fulfilment Centres.",
+      "<strong>Operations Data Service</strong>: Configured scalable Kafka stream consumers to unify analytics across disparate fulfilment models.",
+      "<strong>MFC Manual Picking</strong>: Engineered self-healing resilience patterns to handle transient failures in upstream adaptors, preventing cascading operational outages.",
+      "<strong>MFC DLQ Processor</strong>: Built the automated recovery infrastructure for MFC, enabling zero-touch message replay for failed Kafka events."
+    ],
+    "technologies": {
+      "Data & Messaging": [
+        "Kafka"
+      ],
+      "Architecture": [
+        "Resilience"
+      ]
+    },
+    "role": "Software Development Engineer II"
+  },
+  {
+    "project": "MFC Logistic Unit Service",
+    "period": {
+      "start": "2024-10-03T05:56:20Z",
+      "end": "2024-11-05T11:58:11Z"
+    },
+    "summary": [
+      "Decomposed the monolithic Logistic Unit Service into modular, independently deployable units tailored for the Micro-Fulfilment context.",
+      "Refactored core domain logic into re-usable libraries, reducing code duplication and enabling granular scaling of API layers.",
+      "Ensured rigorous functional parity with legacy systems while optimizing for the low-latency requirements of automated warehouses."
+    ],
+    "technologies": {
+      "Architecture": [
+        "Microservices",
+        "CI/CD"
+      ]
+    },
+    "role": "Software Development Engineer II"
+  },
+  {
+    "project": "FPS-MFC Adaptor",
+    "period": {
+      "start": "2024-09-10T11:38:41Z",
+      "end": "2024-11-02T05:05:38Z"
+    },
+    "summary": [
+      "Developed the critical integration layer connecting legacy FPS systems with next-generation Micro-Fulfilment automation stacks.",
+      "Implemented comprehensive health-check endpoints and event bridges to guarantee reliable data flow between disparate platforms.",
+      "Standardized deployment patterns by enforcing shared CI/CD templates, reducing configuration drift across the MFC ecosystem."
+    ],
+    "technologies": {
+      "Infrastructure": [
+        "Docker",
+        "Azure",
+        "AKS",
+        "Helm"
+      ],
+      "Data & Messaging": [
+        "Kafka"
+      ],
+      "Architecture": [
+        "CI/CD"
+      ]
+    },
+    "role": "Software Development Engineer II"
+  },
+  {
+    "project": "Core Engineering & Scalability 2024",
+    "period": {
+      "start": "2024-09-06T12:10:35Z",
+      "end": "2024-12-31T12:00:00Z"
+    },
+    "summary": [
+      "<strong>MFC CI/CD</strong>: Architected the foundational CI/CD templates for the entire MFC microservices portfolio, enforcing security and quality standards.",
+      "<strong>MFC CI/CD</strong>: Engineered flexible build pipelines with dynamic parameterization, supporting diverse deployment requirements across environments."
+    ],
+    "technologies": {
+      "Infrastructure": [
+        "AKS",
+        "Helm"
+      ],
+      "Architecture": [
+        "CI/CD",
+        "Microservices"
+      ]
+    },
+    "role": "Software Development Engineer II"
+  },
+  {
+    "project": "Delivery Service",
+    "period": {
+      "start": "2016-09-29T08:43:28Z",
+      "end": "2016-10-06T05:02:13Z"
+    },
+    "summary": [
+      "Pioneered the implementation of identity and token-based authentication for the Delivery Service, establishing early platform security standards.",
+      "Designed selective endpoint enforcement strategies to balance robust security with legacy system compatibility during migration phases."
+    ],
+    "technologies": {
+      "Languages": [
+        "C#",
+        "Java"
+      ],
+      "Frameworks & Libs": [
+        ".NET"
+      ],
+      "Infrastructure": [
+        "AWS"
+      ]
+    },
+    "role": "Principal Software Engineer"
+  },
+  {
+    "project": "Retail Signage Systems (Target)",
+    "role": "Senior Software Engineer",
+    "period": {
+      "start": "2011-01-01T00:00:00Z",
+      "end": "2013-01-01T00:00:00Z"
+    },
+    "summary": [
+      "Developed high-volume shelf-edge sign printing applications, integrating .NET frontends with Mainframe backends for thousands of retail stores.",
+      "Optimized batch processing workflows to ensure timely delivery of critical pricing signage."
+    ],
+    "technologies": {
+      "Languages": [
+        "C#",
+        "SQL"
+      ],
+      "Frameworks & Libs": [
+        ".NET",
+        "ASP.NET"
+      ],
+      "Data & Messaging": [
+        "Mainframe",
+        "SQL Server"
+      ]
+    }
+  },
+  {
+    "project": "Procurement Platforms (Rite.Net)",
+    "role": "Software Engineer",
+    "period": {
+      "start": "2009-01-01T00:00:00Z",
+      "end": "2011-01-01T00:00:00Z"
+    },
+    "summary": [
+      "Built web-based procurement solutions for the energy sector, streamlining complex component acquisition processes.",
+      "Implemented responsive interactive UIs using jQuery and JavaScript to significantly improve data entry efficiency."
+    ],
+    "technologies": {
+      "Languages": [
+        "C#",
+        "JavaScript"
+      ],
+      "Frameworks & Libs": [
+        ".NET",
+        "jQuery",
+        "ASP.NET"
+      ],
+      "Data & Messaging": [
+        "SQL Server"
+      ]
+    }
+  },
+  {
+    "project": "Recruitment Systems (Hudson)",
+    "role": "Trainee",
+    "period": {
+      "start": "2008-01-01T00:00:00Z",
+      "end": "2009-01-01T00:00:00Z"
+    },
+    "summary": [
+      "Developed internal HR applications for the recruiting team, digitizing candidate pipeline management.",
+      "Assisted in database schema design and backend stored procedure optimization."
+    ],
+    "technologies": {
+      "Languages": [
+        "C#",
+        "SQL"
+      ],
+      "Frameworks & Libs": [
+        "ASP.NET"
+      ],
+      "Data & Messaging": [
+        "SQL Server"
+      ]
+    }
+  }
+]

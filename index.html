@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Praveen Shankar | Engineering Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Praveen Shankar</h1>
+      <p class="header-role">Staff Software Engineer | Distributed Systems & Scalable Algorithms</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#timelinee">Timeline</a></li>
+          <li><a href="https://github.com/praveenshankar" target="_blank">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        <strong>Backend Software Engineer with 12+ years of experience</strong>
+      </p>
+      <p>
+          I am a backend engineer specializing in the design and delivery of high-scale logistics and fulfilment systems. Over the past decade, I have navigated the transition of enterprise platforms from legacy .NET monoliths to modern, event-driven Java microservices, ensuring operational stability at every step.
+      </p>
+      <p>
+        My expertise lies in solving complex domain problems within store fulfilment—optimizing picking algorithms, resource management, and task orchestration. I have been a foundational engineer on multiple core initiatives, including the Fulfilment Platform System (FPS) and the Micro-Fulfilment Centre (MFC) project, where I focused on architectural analysis, vendor integration, and building resilient data flows.
+      </p>
+      <p>
+        I take pride in my ability to bridge the gap between business requirements and technical implementation, leveraging deep domain context to build software that is both scalable and maintainable.
+      </p>
+      
+      <!-- Key Skills (Compact) -->
+      <div class="skills-compact">
+        <p><span class="skill-label">Languages & Frameworks:</span> Java, Kotlin, Spring Boot, Micronaut, C# / .NET, SQL</p>
+        <p><span class="skill-label">Infrastructure:</span> Kubernetes, Docker, Helm, Azure (AKS), AWS, GitHub Actions</p>
+        <p><span class="skill-label">Data & Messaging:</span> Kafka, Couchbase, PostgreSQL, Redis, NoSQL, N1QL</p>
+        <p><span class="skill-label">Architecture:</span> Microservices, Event-Driven, Domain Driven Design, REST APIs, Distributed Systems</p>
+      </div>
+    </div>
+  </section>
+  <!-- Professional Timeline -->
+  <section id="timelinee" class="section">
+    <div class="container">
+      <h2>Career Timeline at Tesco</h2>
+      <div id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- Personal Projects / Lab -->
+  <section id="lab" class="section">
+    <div class="container">
+      <details class="lab-details">
+        <summary>
+          <h2>Personal Exploration & Lab <span class="toggle-icon">▼</span></h2>
+        </summary>
+        <div class="lab-list">
+          <!--  Repo Analyzer -->
+          <div class="lab-item">
+            <span class="lab-name">Panopticon: Code Forensics</span>
+            <span class="lab-desc">Visualizes technical debt hotspots by correlating Git churn metrics with static bytecode analysis (SootUp).</span>
+            <a href="https://github.com/praveenshankar" target="_blank" class="lab-source">Private</a>
+          </div>
+
+          <!--  App Memory Profiler -->
+          <div class="lab-item">
+            <span class="lab-name">JVM Performance Monitor</span>
+            <span class="lab-desc">Real-time diagnostic tool for profiling JVM memory allocation, Garbage Collection capabilities, and CPU usage.</span>
+            <a href="https://github.com/praveenshankar" target="_blank" class="lab-source">Private</a>
+          </div>
+
+          <!--  Embedding Worker -->
+          <div class="lab-item">
+            <span class="lab-name">RAG Ingestion Pipeline</span>
+            <span class="lab-desc">Scalable ingestion service using Spring AI to chunk codebases and generate vector embeddings for semantic search.</span>
+            <a href="https://github.com/praveenshankar" target="_blank" class="lab-source">Private</a>
+          </div>
+
+          <!--  RAG API Service -->
+          <div class="lab-item">
+            <span class="lab-name">Semantic Code Search</span>
+            <span class="lab-desc">Python-based retrieval engine using Qdrant to power intelligent, context-aware code querying for developers.</span>
+            <a href="https://github.com/praveenshankar" target="_blank" class="lab-source">Private</a>
+          </div>
+
+          <!--  Java AST Parser -->
+          <div class="lab-item">
+            <span class="lab-name">AST Source Parser</span>
+            <span class="lab-desc">Static analysis tool leveraging JavaParser to extract structural code metadata for LLM context enrichment.</span>
+            <a href="https://github.com/praveenshankar" target="_blank" class="lab-source">Private</a>
+          </div>
+
+          <!--  FPS Dependency Gen -->
+          <div class="lab-item">
+              <span class="lab-name">System Topology Mapper</span>
+              <span class="lab-desc">Automated visualization tool that maps microservice dependencies by analyzing config YAMLs and Splunk logs.</span>
+              <a href="https://github.com/praveenshankar" target="_blank" class="lab-source">Private</a>
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy;            2026 [Praveen Shankar] — Built using Tab-nine hosted in GitHub Pages.</p>
+    </div>
+  </footer>
+<script src="js/main.js"></script>
+<script src="js/scroll-reveal.js"></script>
+
+<!-- Custom Timeline Rendering -->
+<script src="js/custom-timeline.js?v=13"></script>
+</body>
+</html>
