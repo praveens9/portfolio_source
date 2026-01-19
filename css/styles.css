@@ -512,7 +512,31 @@ a.doc-link:hover {
    RESPONSIVE DESIGN
    ========================================================= */
 @media (max-width: 768px) {
-  /* 1. HIDE TIMELINE DECORATIONS */
+  /* 1. DISABLE INTERACTIVE MODALS */
+  #overlay, 
+  .timeline-card {
+    display: none !important;
+  }
+
+  /* Remove click cues */
+  .timeline-item, 
+  .repo-name {
+    cursor: default !important;
+    pointer-events: auto !important; /* Allow scrolling/selection */
+  }
+  .repo-name:hover {
+    color: var(--text-color) !important; /* No hover color shift */
+  }
+
+  /* 2. CLEAN FEED LAYOUT */
+  #timeline {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  /* Hide Desktop Decorations */
   .timeline-line,
   .connector-line,
   .timeline-dot, 
@@ -521,101 +545,128 @@ a.doc-link:hover {
   .project-dot {
     display: none !important;
   }
-
-  /* 2. RESET CONTAINER */
-  #timeline {
-    width: 100%;
-    margin: 20px 0;
-  }
   
-  /* 3. RESET ITEMS TO STACKED BLOCKS */
-  /* Using 'position: static' neutralizes all 'left/top' desktop styles */
+  /* Reset Items to Simple Blocks */
   .timeline-item, 
   .timeline-item.left, 
   .timeline-item.right,
   .learning-card-item,
   .milestone-item {
-    position: static !important; /* CRITICAL FIX for alternating positions */
+    position: static !important;
     width: 100% !important;
-    margin-bottom: 25px !important;
-    padding: 0 15px !important; 
+    margin: 0 0 35px 10px !important; /* Vertical spacing */
+    padding: 0 0 0 20px !important;   /* Indent text */
     text-align: left !important;
     display: block !important; 
     opacity: 1 !important;
     transform: none !important;
+    border-left: 2px solid rgba(255, 255, 255, 0.1); /* Clean vertical guide */
   }
   
-  /* 4. CONTENT STYLING (Simple Feed) */
+  /* 3. CONTENT STYLING */
   .content-box {
     border: none !important;
     padding: 0 !important;
     margin: 0 !important;
   }
   
-  /* Remove specific margins */
-  .repo-name, 
-  .repo-snippet, 
-  .tech-stack,
-  .milestone-text-wrapper,
-  .milestone-text-side {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    text-align: left !important;
+  /* Typography Improvements */
+  .repo-name {
+    font-size: 1.1rem !important; /* Larger title */
+    color: #fff !important;
+    font-weight: 700 !important;
+    margin: 0 0 6px 0 !important;
+    display: block;
+  }
+
+  .repo-snippet {
+    font-size: 0.95rem !important; /* Readable body text */
+    line-height: 1.6;
+    color: #cbd5e1 !important;
+    max-width: 100% !important;
+    margin: 0 0 10px 0 !important;
+  }
+
+  /* 4. TECH STACK (Chips) */
+  .tech-stack {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start !important;
+  }
+  
+  .tech-badge {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #a1a1aa;
   }
   
   /* 5. YEAR HEADER */
   .timeline-year {
     text-align: left;
-    margin: 30px 0 15px 15px; 
-    font-size: 1.4rem;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin: 40px 0 20px 0; 
+    font-size: 1.8rem; /* Big Year */
+    font-weight: 800;
+    border-bottom: none;
     display: block;
     width: 100%;
-    padding: 0;
-    transform: none;
+    padding: 0 0 0 10px;
     background: transparent;
+    color: var(--accent-color);
+    position: static !important;
+    transform: none !important;
   }
 
-  /* 6. Learning Lists (Fixed Alignment) */
-  .learning-list-inline {
-    padding-left: 20px !important;
-    list-style-type: disc !important;
+  /* 6. LEARNING & MILESTONES (Simplified) */
+  .learning-card-item,
+  .milestone-item {
+    border-left-color: rgba(16, 185, 129, 0.3) !important; /* Greenish tint for learning */
   }
-  .learning-list-inline li,
-  .timeline-item.left .learning-list-inline li,
-  .timeline-item.right .learning-list-inline li {
+
+  .learning-list-inline {
+    padding-left: 0 !important;
+    list-style-type: none !important;
+    margin: 0 !important;
+  }
+  
+  .learning-list-inline li {
     padding: 0 !important;
-    margin-bottom: 8px;
-    text-align: left !important; 
+    margin-bottom: 6px;
+    color: #10b981; /* Green text */
+    font-size: 0.9rem;
+    font-weight: 600;
   }
   .learning-list-inline li::before,
   .learning-list-inline li::after {
     display: none !important;
   }
-  
-  /* 7. Milestone Text Adjustments */
+
   .milestone-text-wrapper {
       display: block !important;
+      margin: 0 !important;
+      text-align: left !important;
       white-space: normal !important;
   }
   .milestone-text-side {
       font-size: 1rem;
-      color: var(--accent-color);
-      font-weight: 700;
+      color: #94a3b8;
+      font-style: italic;
   }
+  .milestone-connector { display: none !important; }
 
-  /* 8. POPUP CARD MOBILE FIX - Simplified Positioning */
-  .timeline-card {
-      box-sizing: border-box !important;
-      position: fixed !important;
-      top: 10% !important;
-      left: 5% !important;
-      width: 90% !important;
-      max-width: 90% !important;
-      max-height: 80vh !important;
-      padding: 20px 15px !important;
-      overflow-y: auto !important;
-      transform: none !important; /* Disable centering transform */
+  /* Year Summary Highlight */
+  .year-summary-item {
+    border-left-color: #fbbf24 !important; /* Amber border */
+  }
+  .year-summary-item .repo-name {
+    color: #fbbf24 !important;
+  }
+  .year-summary-item .repo-snippet {
+    color: #ddd !important;
+    font-style: italic;
   }
 }
 
