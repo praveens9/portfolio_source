@@ -544,6 +544,14 @@ a.doc-link:hover {
     display: block !important; /* Ensure they are visible */
     opacity: 1 !important;
   }
+  
+  /* FIX: High specificity to override desktop learning card positioning */
+  .timeline-item.left.learning-card-item,
+  .timeline-item.right.learning-card-item {
+      left: 0 !important;
+      width: 100% !important;
+      padding: 0 15px !important;
+  }
 
   /* 4. CONTENT STYLING (Simple Feed) */
   .content-box {
@@ -607,7 +615,9 @@ a.doc-link:hover {
 
   /* 8. POPUP CARD MOBILE FIX */
   .timeline-card {
-      width: 90% !important;
+      box-sizing: border-box !important; /* Ensure padding doesn't overflow width */
+      width: 85vw !important; /* Safer width */
+      max-width: 90% !important;
       left: 50% !important;
       top: 50% !important;
       transform: translate(-50%, -50%) !important;
