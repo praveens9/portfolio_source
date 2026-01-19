@@ -129,6 +129,7 @@ header nav a {
   font-size: 0.85rem;
   color: #cbd5e1;
   line-height: 1.4;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* Tech font */
 }
 
 .skill-label {
