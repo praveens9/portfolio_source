@@ -515,30 +515,48 @@ a.doc-link:hover {
   .timeline-item,
   .timeline-item.left,
   .timeline-item.right {
-    width: 100%;
-    left: 0;
-    text-align: left;
+    width: 100% !important;
+    left: 0 !important;
+    text-align: left !important;
   }
 
   .timeline-line {
-    left: 25px;
-    transform: none;
+    left: 25px !important;
+    transform: none !important;
   }
   .timeline-item .timeline-dot {
-    left: 25px;
-    transform: none;
+    left: 25px !important;
+    transform: none !important;
+    right: auto !important;
   }
-  .repo-name {
-    margin-left: 50px;
-    display: block;
+  
+  /* FORCE Content Alignment with !important to override desktop specific selectors */
+  .timeline-item .repo-name,
+  .timeline-item.left .repo-name,
+  .timeline-item.right .repo-name {
+    margin-left: 50px !important;
+    margin-right: 0 !important;
+    display: block !important;
+    text-align: left !important;
   }
-  .repo-snippet {
-    margin-left: 50px; /* Align snippet with title on mobile */
+  
+  .timeline-item .repo-snippet,
+  .timeline-item.left .repo-snippet,
+  .timeline-item.right .repo-snippet {
+    margin-left: 50px !important;
+    margin-right: 0 !important; 
+    text-align: left !important;
+    display: block !important;
   }
-  .tech-stack {
-    margin-left: 50px; /* Align tech stack with title on mobile */
-    justify-content: flex-start;
+  
+  .timeline-item .tech-stack,
+  .timeline-item.left .tech-stack,
+  .timeline-item.right .tech-stack {
+    margin-left: 50px !important;
+    margin-right: 0 !important;
+    justify-content: flex-start !important;
   }
+  
   .timeline-year {
     background: var(--bg-color);
     margin: 18px 0 10px;
