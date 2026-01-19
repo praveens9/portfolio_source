@@ -512,54 +512,94 @@ a.doc-link:hover {
    RESPONSIVE DESIGN
    ========================================================= */
 @media (max-width: 768px) {
-  .timeline-item,
-  .timeline-item.left,
-  .timeline-item.right {
-    width: 100% !important;
-    left: 0 !important;
-    text-align: left !important;
+  /* 1. HIDE TIMELINE DECORATIONS */
+  .timeline-line,
+  .connector-line,
+  .timeline-dot, 
+  .milestone-dot,
+  .learning-dot,
+  .project-dot {
+    display: none !important;
   }
 
-  .timeline-line {
-    left: 25px !important;
-    transform: none !important;
-  }
-  .timeline-item .timeline-dot {
-    left: 25px !important;
-    transform: none !important;
-    right: auto !important;
+  /* 2. RESET CONTAINER */
+  #timeline {
+    width: 100%;
+    margin: 20px 0;
   }
   
-  /* FORCE Content Alignment with !important to override desktop specific selectors */
-  .timeline-item .repo-name,
-  .timeline-item.left .repo-name,
-  .timeline-item.right .repo-name {
-    margin-left: 50px !important;
+  /* 3. RESET ITEMS TO STACKED BLOCKS */
+  .timeline-item, 
+  .timeline-item.left, 
+  .timeline-item.right,
+  .learning-card-item,
+  .milestone-item {
+    width: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    margin-bottom: 25px !important;
+    padding: 0 15px !important; /* Simple side padding */
+    text-align: left !important;
+    display: block !important; /* Ensure they are visible */
+    opacity: 1 !important;
+  }
+
+  /* 4. CONTENT STYLING (Simple Feed) */
+  .content-box {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  /* Remove the specific margins I added previously */
+  .repo-name, 
+  .repo-snippet, 
+  .tech-stack,
+  .milestone-text-wrapper,
+  .milestone-text-side {
+    margin-left: 0 !important;
     margin-right: 0 !important;
-    display: block !important;
     text-align: left !important;
   }
   
-  .timeline-item .repo-snippet,
-  .timeline-item.left .repo-snippet,
-  .timeline-item.right .repo-snippet {
-    margin-left: 50px !important;
-    margin-right: 0 !important; 
-    text-align: left !important;
-    display: block !important;
-  }
-  
-  .timeline-item .tech-stack,
-  .timeline-item.left .tech-stack,
-  .timeline-item.right .tech-stack {
-    margin-left: 50px !important;
-    margin-right: 0 !important;
-    justify-content: flex-start !important;
-  }
-  
+  /* 5. YEAR HEADER */
   .timeline-year {
-    background: var(--bg-color);
-    margin: 18px 0 10px;
+    text-align: left;
+    margin: 30px 0 15px 15px; /* Align with content */
+    font-size: 1.4rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    display: block;
+    width: 100%;
+    padding: 0;
+    left: 0;
+    transform: none;
+    background: transparent;
+  }
+
+  /* 6. Learning Lists */
+  .learning-list-inline {
+    padding-left: 20px !important;
+    list-style-type: disc !important;
+  }
+  .learning-list-inline li {
+    padding: 0 !important;
+    margin-bottom: 8px;
+  }
+  .learning-list-inline li::before,
+  .learning-list-inline li::after {
+    display: none !important;
+  }
+  
+  /* 7. Milestone Text Adjustments */
+  .milestone-text-wrapper {
+      display: block !important;
+      white-space: normal !important;
+  }
+  .milestone-text-side {
+      font-size: 1rem;
+      color: var(--accent-color);
+      font-weight: 700;
   }
 }
 
@@ -956,13 +996,4 @@ footer {
   max-width: 1200px; 
 }
 
-/* =========================================================
-   MOBILE OPTIMIZATION: HIDE SECONDARY DATA
-   ========================================================= */
-@media (max-width: 768px) {
-  /* Reduce clutter by hiding Learning Cards and Milestones on small screens */
-  .learning-card-item,
-  .milestone-item {
-    display: none !important;
-  }
-}
+
