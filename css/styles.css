@@ -532,7 +532,7 @@ a.doc-link:hover {
   #timeline {
     width: 100%;
     margin: 0;
-    padding: 0 20px;
+    padding: 0 8px; /* Reduced side padding to gain width */
     box-sizing: border-box;
   }
 
@@ -554,8 +554,8 @@ a.doc-link:hover {
   .milestone-item {
     position: static !important;
     width: 100% !important;
-    margin: 0 0 35px 10px !important; /* Vertical spacing */
-    padding: 0 0 0 20px !important;   /* Indent text */
+    margin: 0 0 18px 2px !important; /* Reduced vertical gap and left margin */
+    padding: 0 0 0 12px !important;   /* Reduced indentation */
     text-align: left !important;
     display: block !important; 
     opacity: 1 !important;
@@ -607,7 +607,7 @@ a.doc-link:hover {
   /* 5. YEAR HEADER */
   .timeline-year {
     text-align: left;
-    margin: 40px 0 20px 0; 
+    margin: 25px 0 15px 0; /* Reduced margins to shorten page */
     font-size: 1.8rem; /* Big Year */
     font-weight: 800;
     border-bottom: none;
