@@ -125,12 +125,10 @@ header nav a {
 
 
 .skills-compact p {
-  margin: 6px 0; /* Slightly more gap */
-  font-size: 0.82rem; /* Subtly smaller than body */
-  color: #94a3b8; /* Muted slate for professional contrast */
+  margin: 4px 0;
+  font-size: 0.8rem; /* Smaller than body text */
+  color: #a1a1aa;     /* Slightly more muted for subtle differentiation */
   line-height: 1.5;
-  letter-spacing: 0.2px; /* Airier technical feel */
-  font-weight: 500; /* Subtle medium weight */
 }
 
 .skill-label {
