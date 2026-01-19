@@ -125,11 +125,12 @@ header nav a {
 
 
 .skills-compact p {
-  margin: 4px 0; /* Very tight list items */
-  font-size: 0.85rem;
-  color: #cbd5e1;
-  line-height: 1.4;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* Tech font */
+  margin: 6px 0; /* Slightly more gap */
+  font-size: 0.82rem; /* Subtly smaller than body */
+  color: #94a3b8; /* Muted slate for professional contrast */
+  line-height: 1.5;
+  letter-spacing: 0.2px; /* Airier technical feel */
+  font-weight: 500; /* Subtle medium weight */
 }
 
 .skill-label {
