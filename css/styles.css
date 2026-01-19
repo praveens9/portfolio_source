@@ -939,89 +939,12 @@ footer {
 }
 
 /* =========================================================
-   MOBILE FIXES FOR LEARNING CARDS & MILESTONES
+   MOBILE OPTIMIZATION: HIDE SECONDARY DATA
    ========================================================= */
 @media (max-width: 768px) {
-  /* --- Fix Learning Cards --- */
-  .learning-card-item, 
-  .timeline-item.left.learning-card-item, 
-  .timeline-item.right.learning-card-item {
-    width: 100% !important;
-    left: 0 !important;
-    padding: 0 !important;
-    margin-left: 0 !important;
-    transform: none !important;
-    margin-bottom: 15px !important;
-  }
-
-  /* Align content with other timeline items */
-  .learning-card-item .content-box {
-    margin-left: 50px !important; 
-    padding: 0;
-    border: none !important;
-  }
-
-  /* Reset Text Alignment */
-  .learning-list-inline li,
-  .timeline-item.right .learning-list-inline li,
-  .timeline-item.left .learning-list-inline li {
-    text-align: left !important;
-    padding: 0 !important;
-    margin-bottom: 4px;
-    font-size: 0.9rem;
-  }
-  
-  /* Remove custom bullets positioning */
-  .timeline-item.right .learning-list-inline li::before,
-  .timeline-item.left .learning-list-inline li::after {
+  /* Reduce clutter by hiding Learning Cards and Milestones on small screens */
+  .learning-card-item,
+  .milestone-item {
     display: none !important;
-  }
-  
-  /* Add standard bullets */
-  .learning-list-inline {
-    padding-left: 15px; 
-    list-style-type: disc;
-    margin: 5px 0;
-  }
-  .learning-list-inline li {
-    display: list-item !important;
-    list-style-position: outside;
-  }
-
-  /* Reset Dots for Learning Items */
-  .timeline-item.left.learning-card-item .timeline-dot,
-  .timeline-item.right.learning-card-item .timeline-dot {
-    left: 25px !important; 
-    right: auto !important;
-    transform: translateX(-50%) !important;
-    top: 0.5em !important;
-  }
-
-  /* --- Fix Milestones --- */
-  .milestone-connector {
-    display: none !important;
-  }
-
-  .milestone-text-wrapper,
-  .timeline-item.left .milestone-text-wrapper,
-  .timeline-item.right .milestone-text-wrapper {
-    margin: 0 !important;
-    text-align: left !important;
-    margin-left: 50px !important;
-    white-space: normal !important;
-    display: block !important;
-  }
-
-  .milestone-text-side {
-      font-size: 0.9rem;
-  }
-  
-  .milestone-item .timeline-dot {
-      left: 25px !important;
-      transform: translateX(-50%) !important;
-  }
-  
-  .timeline-milestone::before {
-      display: none;
   }
 }
