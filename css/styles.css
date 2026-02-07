@@ -783,18 +783,22 @@ details[open] .toggle-icon {
 /* Column 3: Source Link */
 .lab-source {
   font-size: 0.75rem;
-  color: #555;
+  color: var(--accent-color);
   text-transform: uppercase;
   text-decoration: none;
-  border: 1px solid #333;
-  padding: 2px 8px;
+  border: 1px solid var(--accent-color);
+  padding: 4px 10px;
   border-radius: 4px;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
   white-space: nowrap;
+  font-weight: 600;
+  background: rgba(0, 183, 255, 0.05);
 }
 .lab-source:hover {
-  border-color: #10b981;
-  color: #10b981;
+  background: var(--accent-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 10px rgba(0, 183, 255, 0.4);
+  transform: translateY(-1px);
 }
 
 @media (max-width: 600px) {
