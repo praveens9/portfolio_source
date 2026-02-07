@@ -9,7 +9,7 @@
 
 **Distributed Systems Engineer** with over **13 years of experience** building and maintaining high-scale fulfilment platforms at Tesco. A core contributor to the strategic transition of enterprise systems from legacy **.NET monoliths** to resilient, event-driven **Java microservices** on **Kubernetes**.
 
-I specialize in backend engineering for complex domains—optimizing logic for picking, resource orchestration, and distributed inventory—while ensuring operational stability. I combine deep domain context with hands-on engineering to build reliable, maintainable systems. Actively exploring AI and static analysis to build better developer tooling and improve architectural visibility.
+I specialize in backend engineering for complex domains, focusing on the optimization of logic for picking, resource orchestration, and distributed inventory, while ensuring operational stability. I combine deep domain context with hands-on engineering to build reliable, maintainable systems. Actively exploring AI and static analysis to build better developer tooling and improve architectural visibility.
 
 **Core Strengths:** Distributed Systems Design • Legacy Modernization • Operational Resilience • Java Ecosystem
 
@@ -22,7 +22,7 @@ I specialize in backend engineering for complex domains—optimizing logic for p
 **Learnings / Emerging Tech:** Spring AI, LangChain, RAG, ReAct Agents, Vector DBs (QDrant, Chroma), Neo4j
 **Infrastructure:** Kubernetes (K8s), Docker, Helm, Azure (AKS), AWS, Terraform
 **Data & Messaging:** Kafka, Couchbase, PostgreSQL, Redis, N1QL, Mainframe
-**Architecture:** Microservices, Event-Driven, Domain Driven Design (DDD), REST APIs, CI/CD, Active-Active Design
+**Architecture:** Microservices, Event-Driven, Domain Driven Design (DDD), REST APIs, CI/CD
 
 ---
 
