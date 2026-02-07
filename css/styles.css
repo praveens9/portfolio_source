@@ -819,6 +819,11 @@ footer {
   color: var(--text-color);
 }
 
+footer p {
+  margin: 0 auto;
+  max-width: none;
+}
+
 /* =========================================================
    ANIMATIONS & EFFECTS
    ========================================================= */
