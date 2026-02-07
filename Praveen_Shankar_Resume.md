@@ -1,7 +1,6 @@
 # Praveen Shankar
-**Staff Software Engineer | Distributed Systems & Scalable Architectures**
-[Bengaluru, India] | [praveen.shankar08@gmail.com](mailto:praveen.shankar08@gmail.com)
-[Portfolio](https://praveens9.github.io/portfolio_source/)
+**Distributed Systems & Scalable Architectures**
+[Bengaluru, India] | [praveen.shankar08@gmail.com](mailto:praveen.shankar08@gmail.com) | [praveens9.github.io/portfolio_source/](https://praveens9.github.io/portfolio_source/)
 
 ---
 
