@@ -1,6 +1,6 @@
 # Praveen Shankar
 **Distributed Systems & Scalable Architectures**
-[Bengaluru, India] | [praveen.shankar08@gmail.com](mailto:praveen.shankar08@gmail.com) | [praveens9.github.io/portfolio_source/](https://praveens9.github.io/portfolio_source/)
+[Bengaluru, India] | +91 9620622248 | [praveen.shankar08@gmail.com](mailto:praveen.shankar08@gmail.com) | [praveens9.github.io/portfolio_source/](https://praveens9.github.io/portfolio_source/)
 
 ---
 
