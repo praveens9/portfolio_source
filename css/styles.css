@@ -801,6 +801,14 @@ details[open] .toggle-icon {
   transform: translateY(-1px);
 }
 
+.lab-source::after {
+  content: " ↗";
+  font-size: 1.1em;
+  margin-left: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 @media (max-width: 600px) {
   .lab-item {
     flex-wrap: wrap;
