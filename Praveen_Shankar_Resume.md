@@ -7,11 +7,11 @@
 
 ## **Professional Summary**
 
-**Backend Engineer** with **12+ years of experience** architecting high-scale logistics platforms. Proven expertise in navigating the strategic transition of enterprise systems from legacy **.NET monoliths** to resilient, event-driven **Java microservices** on **Kubernetes**.
+**Distributed Systems Engineer** with over **13 years of experience** building and maintaining high-scale fulfilment platforms at Tesco. A core contributor to the strategic transition of enterprise systems from legacy **.NET monoliths** to resilient, event-driven **Java microservices** on **Kubernetes**.
 
-As a founding engineer for the **Fulfilment Platform System (FPS)** and **Micro-Fulfilment Centre (MFC)** automation at Tesco, I specialize in solving complex domain problems—optimizing picking algorithms, resource orchestration, and distributed inventory. I combine deep architectural insight with hands-on engineering to build systems capable of **99.99% availability** and massive scale. Actively expanding expertise into AI-driven software engineering, building RAG pipelines and ReAct agents to solve complex code navigation challenges.
+I specialize in backend engineering for complex domains—optimizing logic for picking, resource orchestration, and distributed inventory—while ensuring operational stability. I combine deep domain context with hands-on engineering to build reliable, maintainable systems. Actively exploring AI and static analysis to build better developer tooling and improve architectural visibility.
 
-**Core Strengths:** Distributed Systems Design • Legacy Modernization • Technical Leadership • Operational Resilience
+**Core Strengths:** Distributed Systems Design • Legacy Modernization • Operational Resilience • Java Ecosystem
 
 ---
 
@@ -32,15 +32,14 @@ As a founding engineer for the **Fulfilment Platform System (FPS)** and **Micro-
 *Key Domain: Customer Fulfilment (DMS, FPS, MFC)*
 
 **Software Development Engineer II (SDE-2)** | *2022 – Present*
-*Focus: Micro-Fulfilment Automation, Active-Active Resilience & Technical Leadership*
+*Focus: Micro-Fulfilment Integration & Resilience*
 
-*   **Micro-Fulfilment (MFC) Architect:** Founding engineer for the MFC initiative; designed the integration layer connecting legacy systems with next-gen automation hardware.
-    *   **Strategic Impact:** Led the "Build vs. Buy" analysis for Warehouse Management Systems (WMS), shaping the long-term automation roadmap.
-    *   **Resilience Engineering:** Engineered the **FPS-CFC Adaptor** using a robust state machine to handle out-of-order robotic events, ensuring consistency across distributed systems.
-*   **Active-Active Strategy:** Leading the architectural analysis to migrate the massive Fulfilment Platform System (FPS) to an Active-Active setup, targeting **99.99% availability**.
-*   **Architectural Leadership:** Authored **40+ architectural design records (ADRs)**, driving consensus on complex system behaviors and cross-team integrations.
-*   **Disaster Recovery (DR):** Modernized the **DLQ Processor** to support targeted message replay by event type, enabling **zero-data-loss recovery** from downstream outages.
-*   **Technical Standards & Mentorship:** Established foundational **CI/CD templates** and **Helm charts** for the entire MFC microservices portfolio; mentored junior engineers on microservices best practices.
+*   **Core Integration Engineer:** Key contributor to the integration of third-party robotic automation (MFC) into the Tesco workflow, connecting legacy systems with next-gen hardware.
+    *   **Resilience Engineering:** Designed the **FPS-CFC Adaptor** state machine to handle out-of-order robotic events, improving data consistency across distributed systems.
+    *   **Strategic Analysis:** Conducted architectural feasibility analysis for **Active-Active multi-region deployment**, identifying key challenges in data sharding and conflict resolution.
+*   **Design Collaboration:** Contributed to architectural design discussions (ADRs) for distributed inventory and resource management.
+*   **Disaster Recovery (DR):** Modernized the **DLQ Processor** to support targeted message replay by event type, enabling safer recovery from downstream outages.
+*   **Efficiency Gains:** Helped establish **CI/CD templates** and **Helm charts** to standardize microservice deployment.
 
 **Software Development Engineer I (SDE-1)** | *2019 – 2022* (Organizational Re-leveling)
 *Focus: Orchestration, Observability & Platform Security*
@@ -81,11 +80,13 @@ As a founding engineer for the **Fulfilment Platform System (FPS)** and **Micro-
 ---
 
 ## **Technical Projects & Learnings**
+*Focus: Personal Labs & Architectural Visualization*
 
-*   **Code Navigation Agent (RAG/Agentic):** Architected a Python-based ReAct agent using **LangChain** and **Azure OpenAI** to perform semantic search and call-graph traversal (Neo4j) on Java codebases.
-*   **EmbeddingWorker (Spring AI):** Built a dual-pipeline ingestion service with A/B testing for embedding strategies (Code vs. Description) using **QDrant**.
-*   **AI Data Pipeline (bGita):** Engineered a parallel 3-stage ETL pipeline using **Hybrid LLMs** (GPT-4 + Mini) to enrich 700+ verses with thematic vector search (ChromaDB).
-*   **Code Panopticon (Observability):** Developed a "Code Forensics" dashboard to visualize technical debt by correlating Git churn with Cyclomatic Complexity.
+*   **System Topology Mapper:** Built a visualization tool to map microservice dependencies for the FPS platform, improving visibility into system complexity.
+*   **Code Panopticon (Lab):** Developed a "Code Forensics" dashboard to visualize technical debt by correlating Git churn with Cyclomatic Complexity.
+*   **Code Navigation Agent (Lab):** Experimented with a Python-based ReAct agent using **LangChain** and **Azure OpenAI** to explore semantic search on codebases.
+*   **EmbeddingWorker (Spring AI):** Built a dual-pipeline ingestion service to test embedding strategies (Code vs. Description) using **QDrant**.
+*   **AI Data Pipeline (Bhagavad Gita):** Engineered a parallel 3-stage ETL pipeline using **Hybrid LLMs** to enrich datasets with vector search.
 
 ---
 
