@@ -1,7 +1,7 @@
 # Praveen Shankar
 **Staff Software Engineer | Distributed Systems & Scalable Architectures**
 [Bengaluru, India] | [praveen.shankar08@gmail.com](mailto:praveen.shankar08@gmail.com)
-[Portfolio](https://github.com/praveenshankar/private-project
+[Portfolio](https://praveens9.github.io/portfolio_source/)
 
 ---
 
@@ -42,7 +42,7 @@ As a founding engineer for the **Fulfilment Platform System (FPS)** and **Micro-
 *   **Disaster Recovery (DR):** Modernized the **DLQ Processor** to support targeted message replay by event type, enabling **zero-data-loss recovery** from downstream outages.
 *   **Technical Standards & Mentorship:** Established foundational **CI/CD templates** and **Helm charts** for the entire MFC microservices portfolio; mentored junior engineers on microservices best practices.
 
-**Software Development Engineer I (SDE-1)** | *2019 – 2022*
+**Software Development Engineer I (SDE-1)** | *2019 – 2022* (Organizational Re-leveling)
 *Focus: Orchestration, Observability & Platform Security*
 
 *   **Resource Orchestration:** Evolved **MoveService** into a resilient resource allocation engine. Migrated legacy delete-based persistence to immutable update patterns for improved auditability.
