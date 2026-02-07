@@ -16,11 +16,11 @@ I specialize in backend engineering for complex domains, focusing on the optimiz
 
 ## **Technical Skills**
 
-**Languages:** Java, Kotlin, C# / .NET, SQL, Shell Scripting, Python
+**Languages:** Java, C# / .NET, SQL, Python
 **Frameworks:** Spring Boot, Micronaut, ASP.NET MVC, JUnit, Mockito
 **Learnings / Emerging Tech:** Spring AI, LangChain, RAG, ReAct Agents, Vector DBs (QDrant, Chroma), Neo4j
-**Infrastructure:** Kubernetes (K8s), Docker, Helm, Azure (AKS), AWS, Terraform
-**Data & Messaging:** Kafka, Couchbase, PostgreSQL, Redis, N1QL, Mainframe
+**Infrastructure:** Kubernetes (K8s), Docker, Helm, Azure (AKS), Terraform
+**Data & Messaging:** Kafka, Couchbase, PostgreSQL, MSSQl, Redis, N1QL
 **Architecture:** Microservices, Event-Driven, Domain Driven Design (DDD), REST APIs, CI/CD
 
 ---
@@ -35,18 +35,17 @@ I specialize in backend engineering for complex domains, focusing on the optimiz
 
 *   **Core Integration Engineer:** Key contributor to the integration of third-party robotic automation (MFC) into the Tesco workflow, connecting legacy systems with next-gen hardware.
     *   **Resilience Engineering:** Designed the **FPS-CFC Adaptor** state machine to handle out-of-order robotic events, improving data consistency across distributed systems.
-    *   **Strategic Analysis:** Conducted architectural feasibility analysis for **Active-Active multi-region deployment**, identifying key challenges in data sharding and conflict resolution.
-*   **Design Collaboration:** Contributed to architectural design discussions (ADRs) for distributed inventory and resource management.
+    *   **Strategic Analysis:** Conducted WMS build vs buy analysis, architectural feasibility analysis for **Active-Active multi-region deployment**, identifying key challenges in data replication and conflict resolution.
+*   **Design Collaboration:** Contributed to architectural design discussions (ADRs) for multiple core system components Picking, decanting and resource management etc.
 *   **Disaster Recovery (DR):** Modernized the **DLQ Processor** to support targeted message replay by event type, enabling safer recovery from downstream outages.
 *   **Efficiency Gains:** Helped establish **CI/CD templates** and **Helm charts** to standardize microservice deployment.
 
 **Software Development Engineer I (SDE-1)** | *2019 – 2022* (Organizational Re-leveling)
 *Focus: Orchestration, Observability & Platform Security*
 
-*   **Resource Orchestration:** Evolved **MoveService** into a resilient resource allocation engine. Migrated legacy delete-based persistence to immutable update patterns for improved auditability.
-*   **Operational Automation:** Built **PickAdmin**, a configuration-driven service using the **Kubernetes Java SDK** to automate dynamic CronJobs, **eliminating manual support interventions**.
+*   **Resource Orchestration:** Evolved **MoveService** into a resilient resource allocation engine.
+*   **Operational Automation:** Built **PickAdmin**, a configuration-driven service using the **Kubernetes Java SDK** to automate dynamic CronJobs, **eliminating manual activity**.
 *   **Operational Efficiency:** Delivered the **"Tray Identifier"** capability, a critical feature that enhanced physical inventory tracking and reduced lost units in stores.
-*   **Security Compliance:** Led the platform-wide migration of sensitive configuration credentials to **Kubernetes Secrets**, achieving **100% security compliance**.
 
 **Principal Software Engineer** | *2016 – 2019*
 *Focus: Platform Migration & Algorithm Optimization*
@@ -84,7 +83,6 @@ I specialize in backend engineering for complex domains, focusing on the optimiz
 *   **System Topology Mapper:** Built a visualization tool to map microservice dependencies for the FPS platform, improving visibility into system complexity.
 *   **Code Panopticon (Lab):** Developed a "Code Forensics" dashboard to visualize technical debt by correlating Git churn with Cyclomatic Complexity.
 *   **Code Navigation Agent (Lab):** Experimented with a Python-based ReAct agent using **LangChain** and **Azure OpenAI** to explore semantic search on codebases.
-*   **EmbeddingWorker (Spring AI):** Built a dual-pipeline ingestion service to test embedding strategies (Code vs. Description) using **QDrant**.
 *   **AI Data Pipeline (Bhagavad Gita):** Engineered a parallel 3-stage ETL pipeline using **Hybrid LLMs** to enrich datasets with vector search.
 
 ---
